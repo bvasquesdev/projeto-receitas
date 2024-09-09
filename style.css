@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+body {
+    font-family: "Young-serif", serif;
+    background-color: #f9e8df;
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
+}
+
+.foto-omelete {
+    text-align: center;
+    margin: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titulo {
+    font-size: 28px;
+    color: #5a3327;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.preparacao, .detalhes-preparacao {
+    background-color: #f8e3e7;
+    padding: 15px;
+    border-radius: 10px;
+    color: #5a3327;
+}
+
+h2 {
+    font-size: 20px;
+    color: #5a3327;
+    margin-bottom: 10px;
+}
+
+.lista-ingredientes, .lista-instrucoes {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.lista-ingredientes li, .lista-instrucoes li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.lista-instrucoes {
+    counter-reset: steps;
+}
+
+.lista-instrucoes li {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.lista-instrucoes li:before {
+    content: counter(steps);
+    counter-increment: steps;
+    position: absolute;
+    left: -30px;
+    background-color: #843b28;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.tabela-nutricao {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabela-nutricao th, .tabela-nutricao td {
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-nutricao th {
+    font-weight: bold;
+    font-size: 16px;
+    color: #843b28;
+}
+
+.tabela-nutricao td {
+    font-size: 16px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: white;
+}
