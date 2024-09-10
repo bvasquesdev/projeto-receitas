@@ -127,18 +127,18 @@
     padding-left: 15px;
   }
 
-  .tabela {
+  .tabela table {
     display: flex;
     grid-template-columns: repeat(2, 50%);
     width: 100%;
   }
 
-  .tabela p {
+  .tabela td {
     padding: 10px 0;
     border-bottom: 1px solid var(--stone-150);
   }
 
-  .tabela p:nth-last-child(-n +2) {
+  .tabela table:nth-last-child(-n +2) {
     border-bottom: none;
   }
 
@@ -151,7 +151,18 @@
   }
   
   .attribution {
-    
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .attribution a {
+    text-decoration: none;
+    color: var(--rose-800);
+  }
+
+  .attribution a:hover {
+    text-decoration: underline;
   }
 
   @media (width <= 425px) {
